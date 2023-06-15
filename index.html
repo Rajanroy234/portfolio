@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>My Portfolio</title>
+</header>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: rgb(1, 1, 24);
+        color: white;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 70px;
+        background-color: rgb(11, 11, 51);
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: baseline;
+    }
+
+    nav ul li {
+        list-style: none;
+        margin: 0 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: lavender;
+    }
+
+    nav ul li a:hover {
+        color: rgb(153, 153, 226);
+        font-size: 1.02rem;
+    }
+
+    .left {
+        font-size: 1.5rem;
+    }
+
+    .firstsection {
+        display: flex;
+        justify-content: space-around;
+        margin: 60px 0;
+        align-items: center;
+
+    }
+
+    .firstsection>div {
+        width: 30%;
+
+    }
+
+    .leftsection {
+        font-size: 2.5rem;
+
+    }
+
+    .leftsection .buttons{
+        padding: 30px 0;
+    }
+    .leftsection .btn{
+        padding: 10px;
+        background-color: #0f1144;
+        color: white;
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+
+
+
+
+
+    .rightsection img {
+        width: 80%;
+    }
+
+    .purple {
+        color: rgb(118, 57, 175);
+    }
+
+    #element {
+        color: rgb(118, 57, 175);
+        ;
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Rajan Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">Project</a></li>
+                    <li><a href="">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My Name is <span class="purple">Rajan</span>
+                <div>I am a passionate web</div>
+                <div>developer.</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
+            </div>
+
+            <div class="rightsection">
+                <img src="bg.png" alt="">
+            </div>
+
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphic Designer', 'Web Designer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
